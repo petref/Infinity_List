@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { VirtuaList } from "@/types/types";
 
-import styles from "./virtuaList.module.css";
+import styles from "./index.module.css";
 
 const VirtuaList = ({ 
     totalItems, 
