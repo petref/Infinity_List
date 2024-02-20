@@ -1,7 +1,8 @@
+"use client"
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 
-import VirtuaList from "@/components/VirtuaList/VirtuaList";
+import VirtuaList from "../components/VirtuaList";
 import { ItemsState } from "@/types/types";
 
 
@@ -19,7 +20,14 @@ export default function Home() {
   }, []);
   return (
     <main className={styles.main}>
-        <VirtuaList 
+        <div className={styles.titleMenuWrapper}>
+            <div className={styles.titlePage}>
+                <h3>Virtualized list</h3>
+            </div>
+            <button className={styles.button}>Add new item</button>
+        </div>
+        <div className={styles.listWrapper}>
+            <VirtuaList 
                 totalItems={500000}
                 itemHeight={80}
                 windowHeight={800}
@@ -46,6 +54,7 @@ export default function Home() {
                     );
                 }}
             />
+        </div>
     </main>
   );
 }
