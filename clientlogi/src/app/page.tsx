@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 
 import VirtuaList from "@/components/VirtuaList/VirtuaList";
+import { ItemsState } from "@/types/types";
+
 
 export default function Home() {
 
-  const [items, setItems] = useState<{
-    index: number;
-    name: string;
-    checked: boolean;
-} | (() => { index: number; name: string; checked: boolean; })>([]);
+  const [items, setItems] = useState<ItemsState[]>([]);
 
   useEffect(() => {
     // repopulate the list when count changes
