@@ -37,7 +37,7 @@
 .button:hover {
   background-color: #7083ec;
   color: #fff;
-  
+  cursor: pointer;
 }
 
 .listWrapper{
