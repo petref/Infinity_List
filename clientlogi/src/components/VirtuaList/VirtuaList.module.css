@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-weight: 600;
     scrollbar-gutter: unset;
     text-align: center;
     text-transform: capitalize;
