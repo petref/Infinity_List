@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react";
-import { VirtuaList } from "@/types/types";
+import { VirtuaList } from "../../types/types";
 
-import styles from "./index.module.css";
+import styles from "./VirtuaList.module.css";
 
 const VirtuaList = ({ 
     totalItems, 
