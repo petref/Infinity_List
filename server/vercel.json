@@ -6,6 +6,7 @@
         "use": "@now/node"
       }
     ],
+    "installCommand": "npm install",
     "routes": [
       {
         "src": "/(.*)",
